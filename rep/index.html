@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Junco | IT Student & Developer</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Gabriel Junco - Mexico-based IT student and developer specializing in C++, embedded systems, and web development. Bilingual Spanish/English.">
+    <meta name="keywords" content="Gabriel Junco, developer, IT student, C++, Arduino, ESP32, web development, Mexico">
+    <meta name="author" content="Gabriel Junco">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Gabriel Junco | IT Student & Developer">
+    <meta property="og:description" content="Mexico-based IT student specializing in C++, embedded systems, Arduino, and web development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gabrieljunco.dev">
+    <meta property="og:image" content="./images/og-image.png">
+    
+    <!-- JSON-LD Resume Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Gabriel Junco",
+        "jobTitle": "IT Student & Developer",
+        "url": "https://gabrieljunco.dev",
+        "sameAs": [
+            "https://github.com/gabrieljunco",
+            "https://linkedin.com/in/gabrieljunco"
+        ],
+        "knowsAbout": ["C++", "Arduino", "ESP32", "MySQL", "SolidWorks", "Web Development"],
+        "knowsLanguage": ["Spanish", "English"]
+    }
+    </script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">GJ</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#value">Value</a></li>
+                <li><a href="#process">Process</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <!-- INSTRUCTION: Replace with your photo (recommended: 400x400px, optimized) -->
+                <img src="images\my face formal.png" alt="Gabriel Junco - IT Student and Developer" class="hero-img" loading="lazy">
+                <h1>Gabriel Junco</h1>
+                <p class="hero-subtitle">IT Student & Developer | Mexico-Based | Bilingual ES/EN</p>
+                <p class="hero-tagline">Building efficient solutions with C++, embedded systems, and creative problem-solving.</p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">Get in Touch</a>
+                    <a href="./assets/Gabriel_Junco_Resume.pdf" class="btn btn-secondary" download>Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / Sobre mí -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2>About / <span class="es">Sobre mí</span></h2>
+            <div class="about-content">
+                <p class="lead">I'm an IT student based in Mexico with a passion for building things that work—whether that's optimizing algorithms, wiring up microcontrollers, or crafting clean code. Bilingual in Spanish and English, I bridge technical concepts across languages and cultures.</p>
+                <p>My journey spans from low-level C++ programming with object-oriented design to connecting hardware (ESP32/ESP8266) with databases. I've explored graph algorithms, network analysis tools, CAD modeling in SolidWorks, and even academic writing on intersectionality and feminist theory. Outside of code, you'll find me strategizing Magic: The Gathering decks or tinkering with hardware projects.</p>
+                <p>I value attention to detail, continuous learning, and delivering solutions that actually solve problems—not just check boxes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills / Habilidades -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2>Skills / <span class="es">Habilidades</span></h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <ul class="skill-list">
+                        <li>C++ (OOP, Inheritance, Polymorphism)</li>
+                        <li>Dynamic Memory Management</li>
+                        <li>Graph Algorithms (DFS/BFS)</li>
+                        <li>Multithreading & Parallelism</li>
+                        <li>Data Structures (Hash Tables, Maps)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Embedded & Hardware</h3>
+                    <ul class="skill-list">
+                        <li>Arduino (ESP8266/ESP32)</li>
+                        <li>Sensor Integration</li>
+                        <li>MySQL Database Connectivity</li>
+                        <li>IoT Prototyping</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Software</h3>
+                    <ul class="skill-list">
+                        <li>SolidWorks (CAD)</li>
+                        <li>VS Code</li>
+                        <li>Git & Version Control</li>
+                        <li>Technical Documentation</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <ul class="skill-list">
+                        <li>Bilingual (Spanish/English)</li>
+                        <li>Academic Writing & Research</li>
+                        <li>Problem Solving</li>
+                        <li>Debugging & Analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects / Proyectos -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2>Projects / <span class="es">Proyectos</span></h2>
+            <div class="projects-grid">
+                
+                <!-- Project 1 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>C++ Shapes Library & Area Polymorphism</h3>
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">OOP</span>
+                        </div>
+                    </div>
+                    <p>Implemented a polymorphic shapes library with a pure virtual area() method in the base Shape class. Derived classes (Rectangle, Circle, Polygon) override with their own calculations, demonstrating inheritance and dynamic dispatch.</p>
+                    <!-- INSTRUCTION: Add GitHub repo link and/or code snippet screenshot -->
+                    <div class="project-links">
+                        <a href="#" class="link">View Code →</a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Graph Traversal Tool</h3>
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">Algorithms</span>
+                            <span class="tag">File I/O</span>
+                        </div>
+                    </div>
+                    <p>Loads graph data from an adjacency matrix file, converts to adjacency list representation, and performs DFS/BFS traversals. Outputs traversal order and visualizes the exploration path.</p>
+                    <!-- INSTRUCTION: Add demo GIF or console output screenshot -->
+                    <div class="project-links">
+                        <a href="#" class="link">View Code →</a>
+                    </div>
+                </article>
+
+                <!-- Project 3 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Network Analysis Program</h3>
+                        <div class="project-tags">
+                            <span class="tag">C++</span>
+                            <span class="tag">unordered_map</span>
+                            <span class="tag">Data Analysis</span>
+                        </div>
+                    </div>
+                    <p>Analyzes network logs using hash tables keyed by IP address. Outputs access counts, unique connection summaries, and identifies traffic patterns efficiently with O(1) lookups.</p>
+                    <!-- INSTRUCTION: Add sample output screenshot -->
+                    <div class="project-links">
+                        <a href="#" class="link">View Code →</a>
+                    </div>
+                </article>
+
+                <!-- Project 4 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Arduino → MySQL Bridge</h3>
+                        <div class="project-tags">
+                            <span class="tag">Arduino</span>
+                            <span class="tag">ESP32</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">IoT</span>
+                        </div>
+                    </div>
+                    <p>ESP8266/ESP32 project connecting physical sensors to a remote MySQL database. Implements INSERT and SELECT operations via the Arduino-MySQL library for real-time data logging and retrieval.</p>
+                    <!-- INSTRUCTION: Add wiring diagram photo and database schema screenshot -->
+                    <div class="project-links">
+                        <a href="#" class="link">View Code →</a>
+                    </div>
+                </article>
+
+                <!-- Project 5 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Syntax Highlighter (Parallel vs Sequential)</h3>
+                        <div class="project-tags">
+                            <span class="tag">Multithreading</span>
+                            <span class="tag">Performance</span>
+                            <span class="tag">Analysis</span>
+                        </div>
+                    </div>
+                    <p>Built a syntax highlighting tool with both sequential and parallel implementations. Produced a detailed performance report comparing execution times and analyzing speedup factors.</p>
+                    <!-- INSTRUCTION: Add PDF report link and benchmark chart -->
+                    <div class="project-links">
+                        <a href="#" class="link">View Report →</a>
+                    </div>
+                </article>
+
+                <!-- Project 6 -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>SolidWorks CAD Projects</h3>
+                        <div class="project-tags">
+                            <span class="tag">SolidWorks</span>
+                            <span class="tag">CAD</span>
+                            <span class="tag">Mechanical Design</span>
+                        </div>
+                    </div>
+                    <p>Mechanical designs and 3D models created using SolidWorks Student Edition as part of coursework. Includes assemblies, technical drawings, and prototype concepts.</p>
+                    <!-- INSTRUCTION: Add rendered images or technical drawings -->
+                    <div class="project-links">
+                        <a href="#" class="link">View Gallery →</a>
+                    </div>
+                </article>
+
+                <!-- Project 7 - Creative -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Modern Dragon Tribal (MTG Strategy)</h3>
+                        <div class="project-tags">
+                            <span class="tag">Game Design</span>
+                            <span class="tag">Strategy</span>
+                            <span class="tag">Creative</span>
+                        </div>
+                    </div>
+                    <p>Designed and refined a Modern-format Magic: The Gathering deck focused on cheating large dragon creatures into play early. Demonstrates strategic thinking, resource optimization, and meta-game analysis.</p>
+                    <!-- INSTRUCTION: Add decklist image or link to Moxfield/Archidekt -->
+                    <div class="project-links">
+                        <a href="#" class="link">View Decklist →</a>
+                    </div>
+                </article>
+
+                <!-- Project 8 - Academic -->
+                <article class="project-card">
+                    <div class="project-header">
+                        <h3>Academic Essays & Research</h3>
+                        <div class="project-tags">
+                            <span class="tag">Writing</span>
+                            <span class="tag">Research</span>
+                            <span class="tag">APA</span>
+                        </div>
+                    </div>
+                    <p>Essays on feminist theory and intersectionality demonstrating structured academic writing, critical analysis, and proper APA citation methodology.</p>
+                    <!-- INSTRUCTION: Add PDF samples (redacted if needed) -->
+                    <div class="project-links">
+                        <a href="#" class="link">View Samples →</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- What I Bring / Lo que aporto -->
+    <section class="section section-alt" id="value">
+        <div class="container">
+            <h2>What I Bring / <span class="es">Lo que aporto</span></h2>
+            <div class="value-grid">
+                <div class="value-item">
+                    <h3>🔧 Strong C++ Fundamentals</h3>
+                    <p>Deep understanding of OOP, memory management, and STL. I write efficient, maintainable code that follows best practices.</p>
+                </div>
+                <div class="value-item">
+                    <h3>⚡ Algorithm & Data Structure Proficiency</h3>
+                    <p>Comfortable implementing graph traversals, hash-based lookups, and optimizing for performance. I choose the right tool for the problem.</p>
+                </div>
+                <div class="value-item">
+                    <h3>🔌 Hardware-Software Integration</h3>
+                    <p>Experience bridging physical sensors with databases using Arduino/ESP platforms. I make hardware talk to software reliably.</p>
+                </div>
+                <div class="value-item">
+                    <h3>📐 CAD & Mechanical Thinking</h3>
+                    <p>SolidWorks skills for prototyping and visualization. I think in 3D and understand manufacturing constraints.</p>
+                </div>
+                <div class="value-item">
+                    <h3>🌐 Bilingual Communication</h3>
+                    <p>Fluent in Spanish and English. I document clearly, write professional emails, and collaborate across language barriers.</p>
+                </div>
+                <div class="value-item">
+                    <h3>📝 Technical Writing & Documentation</h3>
+                    <p>From academic papers to code comments, I communicate technical concepts clearly. Good docs save everyone time.</p>
+                </div>
+                <div class="value-item">
+                    <h3>🔍 Debugging & Problem-Solving</h3>
+                    <p>Systematic approach to finding and fixing issues. I read error messages, trace execution, and isolate problems methodically.</p>
+                </div>
+                <div class="value-item">
+                    <h3>📚 Continuous Learner</h3>
+                    <p>Always exploring new tools, frameworks, and concepts. I adapt quickly and enjoy the challenge of learning something new.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How I Work / Cómo trabajo -->
+    <section class="section" id="process">
+        <div class="container">
+            <h2>How I Work / <span class="es">Cómo trabajo</span></h2>
+            <div class="process-content">
+                <div class="process-item">
+                    <h3>Development Environment</h3>
+                    <p>VS Code as my primary editor with appropriate extensions. Git for version control—frequent commits, meaningful messages, branching for features.</p>
+                </div>
+                <div class="process-item">
+                    <h3>Code Quality</h3>
+                    <p>I write clean, commented code. Functions do one thing well. I refactor when complexity grows. Code reviews and pair programming welcome.</p>
+                </div>
+                <div class="process-item">
+                    <h3>Testing & Validation</h3>
+                    <p>Test as I build. For algorithms, I verify with known inputs. For hardware, I prototype incrementally and validate each component before integration.</p>
+                </div>
+                <div class="process-item">
+                    <h3>Documentation</h3>
+                    <p>README files, inline comments, and technical reports. I document setup steps, dependencies, and known issues so others (and future me) can understand the project.</p>
+                </div>
+                <div class="process-item">
+                    <h3>Collaboration</h3>
+                    <p>Clear communication, async-friendly updates, and responsive to feedback. I ask questions early rather than assume. I respect deadlines and flag blockers promptly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education / Educación -->
+    <section class="section section-alt" id="education">
+        <div class="container">
+            <h2>Education / <span class="es">Educación</span></h2>
+            <div class="education-content">
+                <div class="edu-item">
+                    <h3>Information Technology (IT)</h3>
+                    <!-- INSTRUCTION: Replace with your actual university name and expected graduation -->
+                    <p class="edu-institution">Tecnologico de Monterrey — Mexico</p>
+                    <p class="edu-date">Expected Graduation: 2027</p>
+                    <p>Coursework in programming, algorithms, databases, networking, and systems design. Hands-on projects in C++, embedded systems, and CAD modeling.</p>
+                </div>
+                <div class="edu-item">
+                    <h3>Certifications & Training</h3>
+                    <ul>
+                        <li>SolidWorks Student Edition (via Xpert ME)</li>
+                        <!-- INSTRUCTION: Add any other certifications -->
+                        <li>[Add certifications here]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog/Articles Placeholder -->
+    <section class="section" id="blog">
+        <div class="container">
+            <h2>Writing / <span class="es">Escritos</span></h2>
+            <p class="placeholder-text">Coming soon — technical articles, project write-ups, and tutorials.</p>
+            <!-- INSTRUCTION: Add blog posts or article links when available -->
+        </div>
+    </section>
+
+    <!-- Contact / Contacto -->
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <h2>Contact / <span class="es">Contacto</span></h2>
+            <div class="contact-content">
+                <p class="lead">I'm open to internships, freelance projects, and collaboration opportunities. Let's build something together.</p>
+                <div class="contact-links">
+                    <a href="mailto:gabriel.junco@example.com" class="contact-item">
+                        <span class="contact-icon">✉️</span>
+                        <span>gabriel.junco@example.com</span>
+                    </a>
+                    <a href="https://github.com/gabrieljunco" class="contact-item" target="_blank" rel="noopener">
+                        <span class="contact-icon">💻</span>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="https://linkedin.com/in/gabrieljunco" class="contact-item" target="_blank" rel="noopener">
+                        <span class="contact-icon">💼</span>
+                        <span>LinkedIn</span>
+                    </a>
+                </div>
+                <a href="./assets/Gabriel_Junco_Resume.pdf" class="btn btn-primary" download>Download Resume (PDF)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 Gabriel Junco. Built with care.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
